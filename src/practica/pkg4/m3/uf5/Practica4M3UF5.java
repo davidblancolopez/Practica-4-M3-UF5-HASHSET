@@ -13,7 +13,7 @@ public class Practica4M3UF5 {
         Persona p3 = new Persona("Pepo", 14);
         Persona p4 = new Persona("Pipo", 45);
         Persona p5 = new Persona("Papu", 154);
-        Persona p6 = new Persona("Popo", 7);
+        Persona p6 = new Persona("Pipo", 45);
 
         personas.add(p1);
         personas.add(p2);
