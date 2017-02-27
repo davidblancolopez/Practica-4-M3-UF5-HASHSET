@@ -21,6 +21,10 @@ public class Practica4M3UF5 {
         personas.add(p4);
         personas.add(p5);
         personas.add(p6);
+        
+        
+        System.out.println(personas);
+        
     }
 
 }
