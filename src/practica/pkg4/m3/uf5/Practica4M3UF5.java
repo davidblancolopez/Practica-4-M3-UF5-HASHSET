@@ -6,6 +6,7 @@ import java.util.Set;
 public class Practica4M3UF5 {
 
     public static void main(String[] args) {
+        //Construeix un Hashset buit amb capacitat inicial de 16 i factor de carga de 0,75.
         Set<Persona> personas = new HashSet<Persona>();
 
         Persona p1 = new Persona("Pepe", 45);
@@ -26,7 +27,7 @@ public class Practica4M3UF5 {
         System.out.println(personas);
 
         if (personas.contains(p1)) {
-            System.out.println("El elemento p1 existe");
+            System.out.println(p1.toString());
         } else {
             System.out.println("El elemento p1 NO existe");
         }
@@ -37,11 +38,7 @@ public class Practica4M3UF5 {
             System.out.println("El elemento p7 NO existe");
         }
 
-        if (personas.contains(p5)) {
-            System.out.println(p5.toString());
-        } else {
-            System.out.println("El elemento p5 NO existe");
-        }
+      
     }
 
 }
