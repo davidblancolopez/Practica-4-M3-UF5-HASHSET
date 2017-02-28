@@ -14,6 +14,7 @@ public class Practica4M3UF5 {
         Persona p4 = new Persona("Pipo", 45);
         Persona p5 = new Persona("Papu", 154);
         Persona p6 = new Persona("Pipo", 45);
+        Persona p7 = new Persona("lala", 45);
 
         personas.add(p1);
         personas.add(p2);
@@ -21,10 +22,26 @@ public class Practica4M3UF5 {
         personas.add(p4);
         personas.add(p5);
         personas.add(p6);
-        
-        
+
         System.out.println(personas);
-        
+
+        if (personas.contains(p1)) {
+            System.out.println("El elemento p1 existe");
+        } else {
+            System.out.println("El elemento p1 NO existe");
+        }
+
+        if (personas.contains(p7)) {
+            System.out.println("El elemento p7 existe");
+        } else {
+            System.out.println("El elemento p7 NO existe");
+        }
+
+        if (personas.contains(p5)) {
+            System.out.println(p5.toString());
+        } else {
+            System.out.println("El elemento p5 NO existe");
+        }
     }
 
 }
