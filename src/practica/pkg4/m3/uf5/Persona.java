@@ -4,21 +4,15 @@ import java.util.Objects;
 
 public class Persona {
 
-    private String nombre;
+    //private String nombre;
     private int edad;
 
-    public Persona(String nombre, int edad) {
-        this.nombre = nombre;
+    public Persona(int edad) {
+        
         this.edad = edad;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
     public int getEdad() {
         return edad;
@@ -36,7 +30,7 @@ public class Persona {
     @Override
     public int hashCode() {
         int hash = 3;
-        hash = 67 * hash + Objects.hashCode(this.nombre);
+        
         hash = 67 * hash + this.edad;
         return hash;
     }
@@ -61,9 +55,7 @@ public class Persona {
         if (this.edad != other.edad) {
             return false;
         }
-        if (!Objects.equals(this.nombre, other.nombre)) {
-            return false;
-        }
+        
         return true;
     }
 
@@ -74,7 +66,7 @@ public class Persona {
     
     @Override
     public String toString() {
-        return "Persona{" + "nombre=" + nombre + ", edad=" + edad + '}' + "\n";
+        return "Persona{" + ", edad=" + edad + '}' + "\n";
     }
 
 }
