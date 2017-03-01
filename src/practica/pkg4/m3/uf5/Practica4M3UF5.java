@@ -20,10 +20,10 @@ public class Practica4M3UF5 {
         //Operació d'inserció i eliminació de dades.
         long tiempo = System.currentTimeMillis();
         for (int i = 0; i < 200000; i++) {
-            int num = (int) (Math.random() * (1000000 - 1) + 1);
+            int num = (int) (Math.random() * (200000 - 1) + 1);
             personas.add(new Persona(num));
         }
-        for (int i = 0; i < 50000; i++) {
+        for (int i = 0; i < 150000; i++) {
             personas.remove(i);
         }
 
@@ -41,7 +41,7 @@ public class Practica4M3UF5 {
 
         long tiempoTotal = (tiempo2 - tiempo);
         
-
+        System.out.println("Tamany: " + personas.size());
         System.out.println("Temps total: " + tiempoTotal);
 
         //Segona estructura de dades.
@@ -80,10 +80,10 @@ public class Practica4M3UF5 {
 //        //Operació d'inserció i eliminació de dades.
 //        long tiempo = System.currentTimeMillis();
 //        for (int i = 0; i < 200000; i++) {
-//            int num = (int) (Math.random() * (1000000 - 1) + 1);
-//            personas.add(new Persona(num));
+//            //int num = (int) (Math.random() * (200000 - 1) + 1);
+//            personas.add(new Persona(i));
 //        }
-//        for (int i = 0; i < 50000; i++) {
+//        for (int i = 0; i < 15000; i++) {
 //            personas.remove(i);
 //        }
 //
@@ -98,7 +98,8 @@ public class Practica4M3UF5 {
 //        long tiempo2 = System.currentTimeMillis();
 //        long tiempoTotal = (tiempo2 - tiempo);
 //
-//        System.out.println("Temps total: " + tiempoTotal);
+//            System.out.println("Tamany: " + personas.size());
+//      System.out.println("Temps total: " + tiempoTotal);
 
     }
 
