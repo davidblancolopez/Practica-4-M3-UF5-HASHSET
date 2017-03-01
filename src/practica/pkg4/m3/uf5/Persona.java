@@ -24,19 +24,18 @@ public class Persona {
 
     
     /**
-     * Metode que genera un numero que s'assigna al objecte per a identificar-lo. 
+     * Metode que s'encarrega de generar un codi HASH per a cada objecte.
      * @return 
      */
     @Override
     public int hashCode() {
         int hash = 3;
-        
-        hash = 67 * hash + this.edad;
+        hash = 13 * hash + this.edad;
         return hash;
     }
 
     /**
-     * Metode que compara 2 objectes i diu si son iguals.
+     * Metode que s'encarrega de comparar 2 objectes per saber si son iguals o diferents.
      * @param obj
      * @return 
      */
@@ -55,18 +54,15 @@ public class Persona {
         if (this.edad != other.edad) {
             return false;
         }
-        
         return true;
     }
+
+    
 
     
     
     
     
-    
-    @Override
-    public String toString() {
-        return "Persona{" + ", edad=" + edad + '}' + "\n";
-    }
+
 
 }
