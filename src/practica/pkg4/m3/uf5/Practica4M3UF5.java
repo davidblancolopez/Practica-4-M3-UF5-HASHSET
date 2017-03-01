@@ -47,6 +47,7 @@ public class Practica4M3UF5 {
         //Segona estructura de dades.
         Set<Persona2> personas2 = new HashSet<Persona2>();
         
+        //Creem persones.
         Persona2 p1 = new Persona2("Pepe", 1);
         Persona2 p2 = new Persona2("Paco", 2);
         Persona2 p3 = new Persona2("Pepo", 3);
@@ -55,6 +56,7 @@ public class Practica4M3UF5 {
         Persona2 p6 = new Persona2("Pepito", 6);
         Persona2 p8 = new Persona2("Pipo", 4);
         
+        //Les afegim.
         personas2.add(p1);          
         personas2.add(p2);
         personas2.add(p3);
