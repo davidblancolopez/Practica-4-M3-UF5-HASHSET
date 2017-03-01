@@ -27,8 +27,9 @@ public class Practica4M3UF5 {
             personas.remove(i);
         }
 
-            p7.setEdad(45);
             
+        
+        p7.setEdad(45);
             
         if (personas.contains(p7)) {
             System.out.println("El elemento p7 existe");
@@ -43,6 +44,7 @@ public class Practica4M3UF5 {
 
         System.out.println("Temps total: " + tiempoTotal);
 
+        //Segona estructura de dades.
         Set<Persona2> personas2 = new HashSet<Persona2>();
         
         Persona2 p1 = new Persona2("Pepe", 1);
@@ -61,6 +63,7 @@ public class Practica4M3UF5 {
         personas2.add(p6);
         personas2.add(p8);
 
+        
         
         System.out.print(personas2);
         
