@@ -52,6 +52,7 @@ public class Practica4M3UF5 {
         Persona2 p4 = new Persona2("Pipo", 4);
         Persona2 p5 = new Persona2("Papo", 5);
         Persona2 p6 = new Persona2("Pepito", 6);
+        Persona2 p8 = new Persona2("Pipo", 4);
         
         personas2.add(p1);
         personas2.add(p2);
@@ -59,7 +60,7 @@ public class Practica4M3UF5 {
         personas2.add(p4);
         personas2.add(p5);
         personas2.add(p6);
-        
+        personas2.add(p8);
         
         System.out.print(personas2);
         
