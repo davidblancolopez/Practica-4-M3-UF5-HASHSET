@@ -87,7 +87,7 @@ public class Practica4M3UF5 {
 //            personas.remove(i);
 //        }
 //
-//        personas.add(p7);
+//        
 //
 //        if (personas.contains(p7)) {
 //            System.out.println("El elemento p7 existe");
