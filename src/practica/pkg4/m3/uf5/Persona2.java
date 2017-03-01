@@ -29,6 +29,10 @@ public class Persona2 {
         this.edad = edad;
     }
 
+    /**
+     * Metode que s'encarrega de generar un codi HASH per a cada objecte.
+     * @return 
+     */
     @Override
     public int hashCode() {
         int hash = 3;
@@ -37,6 +41,11 @@ public class Persona2 {
         return hash;
     }
 
+    /**
+     * Metode que s'encarrega de comparar 2 objectes per saber si son iguals o diferents.
+     * @param obj
+     * @return 
+     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {

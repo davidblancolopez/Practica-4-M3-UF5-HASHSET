@@ -15,9 +15,7 @@ public class Practica4M3UF5 {
         
         Set<Persona> personas = new HashSet<Persona>();
 
-        Persona p7 = new Persona(45);
-
-        
+        Persona p7 = new Persona();      
 
         //Operació d'inserció i eliminació de dades.
         long tiempo = System.currentTimeMillis();
@@ -29,7 +27,8 @@ public class Practica4M3UF5 {
             personas.remove(i);
         }
 
-            personas.add(p7);
+            p7.setEdad(45);
+            
             
         if (personas.contains(p7)) {
             System.out.println("El elemento p7 existe");
