@@ -12,7 +12,7 @@ public class Practica4M3UF5 {
          * ************** HASHSET *****************
          */
  
-        //Construeix un Hashset buit amb capacitat inicial de 16 i factor de carga de 0,75.
+        
         Set<Persona> personas = new HashSet<Persona>();
 
         Persona p7 = new Persona(45);
@@ -54,13 +54,14 @@ public class Practica4M3UF5 {
         Persona2 p6 = new Persona2("Pepito", 6);
         Persona2 p8 = new Persona2("Pipo", 4);
         
-        personas2.add(p1);
+        personas2.add(p1);          
         personas2.add(p2);
         personas2.add(p3);
         personas2.add(p4);
         personas2.add(p5);
         personas2.add(p6);
         personas2.add(p8);
+
         
         System.out.print(personas2);
         
