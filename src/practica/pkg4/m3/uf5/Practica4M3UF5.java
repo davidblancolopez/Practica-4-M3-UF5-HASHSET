@@ -40,9 +40,29 @@ public class Practica4M3UF5 {
         long tiempo2 = System.currentTimeMillis();
 
         long tiempoTotal = (tiempo2 - tiempo);
+        
 
         System.out.println("Temps total: " + tiempoTotal);
 
+        Set<Persona2> personas2 = new HashSet<Persona2>();
+        
+        Persona2 p1 = new Persona2("Pepe", 1);
+        Persona2 p2 = new Persona2("Paco", 2);
+        Persona2 p3 = new Persona2("Pepo", 3);
+        Persona2 p4 = new Persona2("Pipo", 4);
+        Persona2 p5 = new Persona2("Papo", 5);
+        Persona2 p6 = new Persona2("Pepito", 6);
+        
+        personas2.add(p1);
+        personas2.add(p2);
+        personas2.add(p3);
+        personas2.add(p4);
+        personas2.add(p5);
+        personas2.add(p6);
+        
+        
+        System.out.print(personas2);
+        
         /**
          * *********** ARRAYLIST   ************
          */

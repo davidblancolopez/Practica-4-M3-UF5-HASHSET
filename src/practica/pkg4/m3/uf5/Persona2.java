@@ -1,18 +1,25 @@
+
 package practica.pkg4.m3.uf5;
 
 import java.util.Objects;
 
-public class Persona {
 
-    //private String nombre;
+public class Persona2 {
+    private String nombre;
     private int edad;
 
-    public Persona(int edad) {
-        
+    public Persona2(String nombre, int edad) {
+        this.nombre = nombre;
         this.edad = edad;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
     public int getEdad() {
         return edad;
@@ -22,23 +29,14 @@ public class Persona {
         this.edad = edad;
     }
 
-    
-    /**
-     * Metode que s'encarrega de generar un codi HASH per a cada objecte.
-     * @return 
-     */
     @Override
     public int hashCode() {
         int hash = 3;
-        hash = 13 * hash + this.edad;
+        hash = 89 * hash + Objects.hashCode(this.nombre);
+        hash = 89 * hash + this.edad;
         return hash;
     }
 
-    /**
-     * Metode que s'encarrega de comparar 2 objectes per saber si son iguals o diferents.
-     * @param obj
-     * @return 
-     */
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -50,8 +48,11 @@ public class Persona {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Persona other = (Persona) obj;
+        final Persona2 other = (Persona2) obj;
         if (this.edad != other.edad) {
+            return false;
+        }
+        if (!Objects.equals(this.nombre, other.nombre)) {
             return false;
         }
         return true;
@@ -59,15 +60,9 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" + "edad=" + edad + '}';
+        return "Persona2{" + "nombre=" + nombre + ", edad=" + edad + '}' + '\n';
     }
-
-    
-
     
     
     
-    
-
-
 }
