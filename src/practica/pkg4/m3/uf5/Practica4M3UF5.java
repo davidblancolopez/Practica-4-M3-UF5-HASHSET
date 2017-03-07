@@ -49,7 +49,7 @@ public class Practica4M3UF5 {
         /****************************************************************************************************
          ****************************************************************************************************/
         
-        
+        System.out.println("******************************************************************************");
         
         
         //Segona estructura de dades.
@@ -76,7 +76,7 @@ public class Practica4M3UF5 {
         System.out.print(coches);
         
 
-        
+        System.out.println("******************************************************************************");
  
         
         
@@ -84,33 +84,35 @@ public class Practica4M3UF5 {
          * *********** ARRAYLIST   ************
          */
 
-//        ArrayList<Persona> personas = new ArrayList<Persona>();
-//
-//        Persona p7 = new Persona(45);
-//
-//        //Operació d'inserció i eliminació de dades.
-//        long tiempo = System.currentTimeMillis();
-//        for (int i = 0; i < 200000; i++) {
-//            //int num = (int) (Math.random() * (200000 - 1) + 1);
-//            personas.add(new Persona(i));
-//        }
-//        for (int i = 0; i < 15000; i++) {
-//            personas.remove(i);
-//        }
-//
-//        
-//
-//        if (personas.contains(p7)) {
-//            System.out.println("El elemento p7 existe");
-//        } else {
-//            System.out.println("El elemento p7 NO existe");
-//        }
-//
-//        long tiempo2 = System.currentTimeMillis();
-//        long tiempoTotal = (tiempo2 - tiempo);
-//
-//            System.out.println("Tamany: " + personas.size());
-//      System.out.println("Temps total: " + tiempoTotal);
+        ArrayList<Persona> personas2 = new ArrayList<Persona>();
+
+        Persona p8 = new Persona(45);
+
+        //Operació d'inserció i eliminació de dades.
+        long tiempo1Array = System.currentTimeMillis();
+        
+        
+        for (int i = 0; i < 200000; i++) {
+            //int num = (int) (Math.random() * (200000 - 1) + 1);
+            personas2.add(new Persona(i));
+        }
+        for (int i = 0; i < 15000; i++) {
+            personas2.remove(i);
+        }
+
+        
+
+        if (personas2.contains(p7)) {
+            System.out.println("El elemento p7 existe");
+        } else {
+            System.out.println("El elemento p7 NO existe");
+        }
+
+        long tiempo2Array = System.currentTimeMillis();
+        long tiempoTotalArray = (tiempo2Array - tiempo1Array);
+
+        System.out.println("Tamany: " + personas2.size());
+        System.out.println("Temps total ArrayList: " + tiempoTotalArray);
 
     }
 
