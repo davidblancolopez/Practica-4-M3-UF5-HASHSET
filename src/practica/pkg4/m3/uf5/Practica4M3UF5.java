@@ -23,14 +23,14 @@ public class Practica4M3UF5 {
             //int num = (int) (Math.random() * (200000 - 1) + 1);
             personas.add(new Persona(i));
         }
-        
+              
         
         for (int i = 0; i < 150000; i++) {          
            Persona p = new Persona(i);
            personas.remove(p);
         }
 
-            
+        personas.add(p7);
             
         if (personas.contains(p7)) {
             System.out.println("El elemento p7 existe");
