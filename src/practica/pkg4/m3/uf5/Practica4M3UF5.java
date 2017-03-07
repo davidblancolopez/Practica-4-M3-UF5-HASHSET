@@ -20,11 +20,12 @@ public class Practica4M3UF5 {
         //Operació d'inserció i eliminació de dades.
         long tiempo = System.currentTimeMillis();
         for (int i = 0; i < 200000; i++) {
-            int num = (int) (Math.random() * (200000 - 1) + 1);
-            personas.add(new Persona(num));
+            //int num = (int) (Math.random() * (200000 - 1) + 1);
+            personas.add(new Persona(i));
         }
-        for (int i = 0; i < 150000; i++) {
-            personas.remove(i);
+        for (int i = 0; i < 150000; i++) {          
+           Persona p = new Persona(i);
+           personas.remove(p);
         }
 
             
