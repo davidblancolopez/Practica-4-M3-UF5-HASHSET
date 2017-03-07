@@ -57,7 +57,7 @@ public class Practica4M3UF5 {
         //Creem coches.
         
         Coche c1 = new Coche("1111AAA", "Reanult", "Megane", "Azul");
-        Coche c2 = new Coche("2222BBB", "Citroen", "Sexo", "Rojo");
+        Coche c2 = new Coche("2222BBB", "Citroen", "Saxo", "Rojo");
         Coche c3 = new Coche("3333CCC", "mitsubishi", "Pajero", "Blanco");
         Coche c4 = new Coche("4444DDD", "Ford", "Focus", "Azul");
         Coche c5 = new Coche("5555EEE", "Ferrari", "Laferrari", "Rojo");

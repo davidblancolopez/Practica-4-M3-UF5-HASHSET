@@ -111,9 +111,11 @@ public class Coche {
         return true;
     }
 
+    
+    
     @Override
     public String toString() {
-        return "Coche{" + "matricula=" + matricula + ", Marca=" + Marca + ", Modelo=" + Modelo + ", Color=" + Color + '}' + "\n";
+        return "Coche{" + "matricula= " + matricula + ", Marca= " + Marca + ", Modelo= " + Modelo + ", Color= " + Color + '}' + "\n";
     }
     
     
