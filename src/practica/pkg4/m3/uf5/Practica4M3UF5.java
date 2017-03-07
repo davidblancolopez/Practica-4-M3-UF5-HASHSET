@@ -43,31 +43,42 @@ public class Practica4M3UF5 {
         
         System.out.println("Tamany: " + personas.size());
         System.out.println("Temps total: " + tiempoTotal);
-
+        
+        
+        
+        /****************************************************************************************************
+         ****************************************************************************************************/
+        
+        
+        
+        
         //Segona estructura de dades.
-        Set<Persona2> personas2 = new HashSet<Persona2>();
+        Set<Coche> coches = new HashSet<Coche>();
+
+        //Creem coches.
         
-        //Creem persones.
-        Persona2 p1 = new Persona2("Pepe", 1);
-        Persona2 p2 = new Persona2("Paco", 2);
-        Persona2 p3 = new Persona2("Pepo", 3);
-        Persona2 p4 = new Persona2("Pipo", 4);
-        Persona2 p5 = new Persona2("Papo", 5);
-        Persona2 p6 = new Persona2("Pepito", 6);
-        Persona2 p8 = new Persona2("Pipo", 4);
+        Coche c1 = new Coche("1111AAA", "Reanult", "Megane", "Azul");
+        Coche c2 = new Coche("2222BBB", "Citroen", "Sexo", "Rojo");
+        Coche c3 = new Coche("3333CCC", "mitsubishi", "Pajero", "Blanco");
+        Coche c4 = new Coche("4444DDD", "Ford", "Focus", "Azul");
+        Coche c5 = new Coche("5555EEE", "Ferrari", "Laferrari", "Rojo");
         
-        //Les afegim.
-        personas2.add(p1);          
-        personas2.add(p2);
-        personas2.add(p3);
-        personas2.add(p4);
-        personas2.add(p5);
-        personas2.add(p6);
-        personas2.add(p8);
+        Coche c6 = new Coche("1111AAA", "Aston Martin", "DB11", "Verde oscuro");
 
         
+        coches.add(c1);
+        coches.add(c2);
+        coches.add(c3);
+        coches.add(c4);
+        coches.add(c5);
+        coches.add(c6);
+
+        System.out.print(coches);
         
-        System.out.print(personas2);
+
+        
+ 
+        
         
         /**
          * *********** ARRAYLIST   ************
